@@ -12,6 +12,35 @@ So, when you see `<leader>` in a shortcut, you should press `,` followed by the 
 
 ---
 
+## Most Frequently Used Shortcuts (Top 20)
+
+This section highlights some of the most common and useful shortcuts from this configuration.
+
+| Mode        | Shortcut        | Action                               | Description                                    |
+|-------------|-----------------|--------------------------------------|------------------------------------------------|
+| Normal      | `<leader>w`     | `:w!<cr>`                            | Save current file.                             |
+| Command     | `:W`            | `w !sudo tee % > /dev/null \| edit!` | Save current file using sudo.                  |
+| Normal      | `<space>`       | `/`                                  | Search forward.                                |
+| Normal      | `<leader><cr>`  | `:noh<cr>`                           | Clear search highlight.                        |
+| Normal      | `0`             | `^`                                  | Go to first non-blank character of line.       |
+| Normal      | `<C-j>`         | `<C-W>j`                             | Move to window below.                          |
+| Normal      | `<C-k>`         | `<C-W>k`                             | Move to window above.                          |
+| Normal      | `<leader>tn`    | `:tabnew<cr>`                         | Create a new tab.                              |
+| Normal      | `<leader>tc`    | `:tabclose<cr>`                       | Close current tab.                             |
+| Normal      | `<leader>l`     | `:bnext<cr>`                         | Go to next buffer.                             |
+| Normal      | `<leader>h`     | `:bprevious<cr>`                     | Go to previous buffer.                         |
+| All         | `<F5>`          | `:call CompileRun()<CR>`             | Compile and run current file.                  |
+| Normal      | `<leader>o`     | `:BufExplorer<cr>`                   | Open BufExplorer (manage buffers).             |
+| Normal      | `<C-f>`         | (CtrlP main map)                     | Open CtrlP to find files.                      |
+| Normal      | `<leader>j`     | `:CtrlP<cr>`                         | (Alternative) Open CtrlP to find files.        |
+| Normal      | `<leader>nn`    | `:NERDTreeToggle<cr>`                | Toggle NERDTree file explorer.                 |
+| Normal      | `<leader>g`     | `:Ack`                               | Open Ack/ag for project-wide search.           |
+| Normal      | `<leader>ss`    | `:setlocal spell!<cr>`               | Toggle spell check for current buffer.         |
+| Normal      | `<leader>z`     | `:Goyo<cr>`                          | Toggle Goyo (distraction-free writing mode).   |
+| Insert      | `<C-j>`         | (snipMate trigger)                   | Trigger snipMate snippet expansion.            |
+
+---
+
 ## I. Normal Mode Mappings
 
 These shortcuts are available in Normal mode.
